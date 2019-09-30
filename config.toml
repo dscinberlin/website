@@ -1,0 +1,34 @@
+baseurl = "https://dscinberlin.de/"
+theme = "cocoa-eh"
+builddrafts = true
+canonifyurls = true
+contentdir = "content"
+languageCode = "en-US"
+layoutdir = "layouts"
+publishdir = "public"
+author = "DSC Berlin"
+title = "Developer Student Club Berlin"
+disqusshortname = ""
+pluralizelisttitles = false
+
+[permalinks]
+blog = "blog/:slug/"
+
+[params]
+dateform = "Jan 2, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+description = "Website and Blog of the Berlin local DSC group"
+copyright = "Copyright © 2019 DSC Berlin"
+logofile = "img/logo.png"
+faviconfile = "img/logo.png"
+highlightjs = true
+progressively = true
+align_left = false
+lang = "en"
+github = "dscinberlin"
+email = "admin@dscinberlin.de"
+linkedin = "john-example-aa80ue8è"
+twitter = "example"
+social_banner = "img/banner.png"
+posts_navigation = true
+small_banner_logo = false

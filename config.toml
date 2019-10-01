@@ -10,6 +10,7 @@ author = "DSC Berlin"
 title = "Developer Student Club Berlin"
 disqusshortname = ""
 pluralizelisttitles = false
+DefaultContentLanguage = "en"
 
 [permalinks]
 blog = "blog/:slug/"
@@ -25,6 +26,7 @@ highlightjs = true
 progressively = true
 align_left = false
 lang = "en"
+enlarged = true
 github = "dscinberlin"
 email = "admin@dscinberlin.de"
 linkedin = "john-example-aa80ue8è"
@@ -32,3 +34,11 @@ twitter = "example"
 social_banner = "img/banner.png"
 posts_navigation = true
 small_banner_logo = false
+titlestyle = "capitalize"
+
+[languages]
+  [languages.en]
+
+  [languages.de]
+    [languages.de.params]
+    description = "Website und Blog der lokalen Berliner DSC Gruppe"

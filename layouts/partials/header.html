@@ -8,11 +8,7 @@
     <a href="https://dscinberlin.eventbrite.com/?ref=elink" target="_blank">NEXT EVENT: TU Hackday 16.10.2019, MAR</a>
 </div>
 
-{{ if (or (.Site.Params.small_banner_logo) (and (.IsPage) (not (.Site.Params.large_banner_logo)))) }}
-<div class="header column">
-{{ else }}
 <div class="header header-home column">
-{{ end }}
     <div class="container">
         {{ if (not (isset .Site.Params "logofile")) }}
         <a href="https://github.com/mtn/cocoa-eh-hugo-theme/wiki/Configuration#logo">Logo HOWTO</a>

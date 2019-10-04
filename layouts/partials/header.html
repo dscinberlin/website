@@ -23,28 +23,17 @@
             <a href="/"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
             <nav>
                 <ul>
-                    {{ if (and (ne (len (where .Site.RegularPages "Section" "blog")) 0) (not (in .Site.Params.exclude_headings "blog"))) }}
-                            <li><a href="/blog/">Blog</a></li>
+                    {{ range .Site.Menus.main.ByWeight }}
+                    <li>
+                        <a href="{{ .URL }}">
+                            {{ .Pre }}
+                            <span>{{ .Name }}</span>
+                        </a>
+                    </li>
                     {{ end }}
-                    {{ range $.Site.Home.Sections }}
-                        {{ range first 1 (where .Pages "Section" "ne" "")}}
-                            {{ if (and (ne .Section "blog") (not (in .Site.Params.exclude_headings (lower .Section))))}}
-                            <li><a href="{{ .Section | urlize | relURL }}">{{ .Section }}</a></li>
-                            {{ end }}
-                        {{ end }}
-                    {{ end }}
-                    {{ range where .Site.RegularPages "Section" ""}}
-                        {{ if (and (and (ne .Title "License") (ne .Title "Home")) (not (in .Site.Params.exclude_headings (lower .Title))))}}
-                            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                        {{ end }}
-                    {{ end }}
-                </ul>
-                <ul class="lang">
-                    <li><a href="/en/">en</li>
-                    <div></div>
-                    <li><a href="/de/">de</li>
                 </ul>
             </nav>
+            <a href="{{ .Site.BaseURL }}coc" class="coc-link">Code of Conduct</a>
         </div>
     </div>
 </div>

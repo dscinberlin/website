@@ -1,0 +1,19 @@
+<li class="post-item">
+    <!--
+    <span class="meta">{{ .Date.Format .Site.Params.dateform }}</span>
+    -->
+    {{ if not .Params.draft }}
+    <a class="page-heading" href="{{ .RelPermalink }}"><div>{{ .Title }}</div></a>
+    <div class="meta">
+        <span class="date">{{ dateFormat .Site.Params.dateform .Params.Evdate }}</span>
+        <span class="location">{{ .Params.Evlocation }}</span>
+    </div>
+      {{ .Summary }}
+      {{ if .Truncated }}
+      <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+      <div>
+        <a class="coc-link" href="{{ .RelPermalink }}">More…</a>
+      </div>
+      {{end}}
+    {{end}}
+</li>

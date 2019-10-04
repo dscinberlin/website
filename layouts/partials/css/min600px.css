@@ -121,7 +121,7 @@ padding: 0 30px;
 }
 div.header {
 padding-top: 60px;
-padding-bottom: 60px;
+padding-bottom: 10px;
 }
 div.footer {
 padding-top: 60px;
@@ -138,13 +138,17 @@ div.main .content {
   {{ end }}
 }
 div.main .container .content .post-item {
-display: flex;
+display: block;
 list-style: none;
 padding-left: 1.5em;
 }
 div.main .container .content .post-item .meta {
 display: block;
 }
+div.main .container .content .post-item .meta .date {
+  margin-right: 2em;
+}
+
 div.main .content .markdown blockquote {
 padding-right: 5rem;
 padding-left: 1.25rem;

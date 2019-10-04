@@ -12,6 +12,19 @@ disqusshortname = ""
 pluralizelisttitles = false
 DefaultContentLanguage = "en"
 
+[menu]
+  [[menu.main]]
+    identifier = "Blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = -120
+
+  [[menu.main]]
+    identifier = "Events"
+    name = "Events"
+    url = "/events/"
+    weight = -110
+
 [permalinks]
 blog = "blog/:slug/"
 
@@ -32,13 +45,15 @@ email = "admin@dscinberlin.de"
 linkedin = "john-example-aa80ue8è"
 twitter = "example"
 social_banner = "img/banner.png"
-posts_navigation = true
+posts_navigation = false
 small_banner_logo = false
 titlestyle = "capitalize"
 
 [languages]
   [languages.en]
+  languageName = "English"
 
   [languages.de]
+  languageName = "German"
     [languages.de.params]
     description = "Website und Blog der lokalen Berliner DSC Gruppe"

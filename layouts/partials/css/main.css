@@ -181,7 +181,7 @@ div.header .container .logo {
   margin-left: -2em;
 }
 div.header .name {
-  padding-top: 20px;
+  padding-top: 0px;
   font-size: 28px;
   font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
@@ -242,6 +242,18 @@ div.header nav ul a {
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
+
+.coc-link {
+  color: #555555;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+}
+.coc-link:hover {
+  color: #111111;
+}
+
 div.header nav ul a:hover {
   color: #111111;
 }
@@ -289,6 +301,14 @@ div.footer .container .icons {
   flex-grow: 0.5;
   text-align: end;
 }
+div.footer .container div .language {
+  display: flex;
+  flex-direction: row;
+}
+div.footer .container div .language li {
+  margin: 5px;
+}
+
 div.main .container {
   -webkit-align-items: center;
   -moz-align-items: center;
@@ -325,7 +345,7 @@ div.main .content .page-heading {
   font-weight: 700;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -482,13 +502,6 @@ div.header-home {
 }
 div.main {
   padding-top: 32px;
-}
-div.main .container .content .post-item .meta {
-    display: block;
-}
-div.main .container .content .post-item {
-    display: flex;
-    list-style: none;
 }
 a {
   color: #428bca;

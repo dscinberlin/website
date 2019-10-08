@@ -11,4 +11,5 @@ cool and engaging workshops, talks and projects to students at all universties
 in Berlin.
 
 We are just starting out and would love to include new members
-interested in contributing!
+interested in contributing! Just drop us a mail at
+[team@dscinberlin.de](mailto:team@dscinberlin.de).

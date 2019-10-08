@@ -5,7 +5,7 @@
     {{ if not .Params.draft }}
     <a class="page-heading" href="{{ .RelPermalink }}"><div>{{ .Title }}</div></a>
     <div class="meta">
-        <span class="date">{{ dateFormat .Site.Params.dateform .Params.Evdate }}</span>
+        <span class="date">{{ dateFormat .Site.Params.timeform .Params.Evdate }}</span>
         <span class="location">{{ .Params.Evlocation }}</span>
     </div>
       {{ .Summary }}

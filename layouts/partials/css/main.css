@@ -355,6 +355,12 @@ div.main .content .page-heading {
 div.main .content .front-matter .page-heading {
   margin-bottom: 0;
 }
+div.main .event .page-heading {
+  margin-bottom: 0;
+}
+div.main .event .meta {
+  margin-bottom: 16px;
+}
 div.main .content .front-matter .meta {
   font-size: 14px;
   color: #666666;
@@ -488,6 +494,25 @@ div.main .container .content .see-more {
 div.main .container .content .see-more:hover {
   color: #666;
 }
+
+div.main .container .content .meta {
+  display: flex;
+  flex-direction: row;
+}
+
+div.main .container .content .meta .date {
+  background-color: #e0ffff;
+  padding: 4px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+div.main .container .content .meta .location {
+  background-color: #ffe0ff;
+  padding: 4px;
+  border-radius: 10px;
+}
+
 section {
   padding: 0 16px;
 }

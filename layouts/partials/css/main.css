@@ -340,8 +340,8 @@ div.main .content .posts {
   margin-bottom: 4em;
   {{ end }}
 }
-div.main .content .page-heading .title  {
-  font-size: 20px;
+div.main .content .page-heading  {
+  font-size: 1.3em;
   font-weight: 700;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
@@ -357,6 +357,9 @@ div.main .content .front-matter .page-heading {
 }
 div.main .event .page-heading {
   margin-bottom: 0;
+}
+div.main .event .header {
+  padding: 0;
 }
 div.main .event .meta {
   margin-bottom: 16px;
@@ -471,7 +474,7 @@ div.main .container .content .post-item {
   align-items: center;
   list-style: none;
 }
-div.main .container .content .post-item .event-date {
+div.event-date {
   display: block;
   background-color: #f8f8f8;
   text-align: center;
@@ -479,7 +482,18 @@ div.main .container .content .post-item .event-date {
   padding: 1em;
   position: relative;
 }
-div.main .container .content .post-item .overlay {
+div.event-date .time {
+  font-size: 2em;
+}
+div.main .container .content .header {
+  display: flex;
+  margin-bottom: 1em;
+}
+div.main .container .content .header > div {
+  align-self: center;
+}
+
+.overlay {
   font-size: 1em;
   background-color: #1e0a3c;
   position: absolute;
@@ -491,10 +505,10 @@ div.main .container .content .post-item .overlay {
   transition: .2s linear;
   overflow: hidden;
 }
-div.main .container .content .post-item .event-date:hover .overlay {
+div:hover > .overlay {
   height: 100%;
 }
-div.main .container .content .post-item .overlay a {
+.overlay a {
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -503,10 +517,9 @@ div.main .container .content .post-item .overlay a {
   justify-content: center;
   align-content: space-around;
 }
-div.main .container .content .post-item .event-date .time {
-  font-size: 2em;
+.overlay a:hover {
+  color: #ffffff;
 }
-
 
 div.main .container .content .post-item .item .page-heading {
   display: flex;
@@ -520,13 +533,10 @@ div.main .container .content .post-item .item .meta {
   justify-content: space-between;
 }
 
-div.main .container .content .post-item .item .title {
-  font-size: 1.5em;
-}
-
 div.content .post-item .item .location {
   color: #606060;
   font-size: 0.8em;
+  font-weight: normal;
 }
 
 div.main .container .content .post-item .meta {
@@ -552,9 +562,6 @@ div.main .container .content .meta {
 }
 
 div.main .container .content .meta .date {
-  background-color: #e0ffff;
-  padding: 4px;
-  border-radius: 10px;
   margin-right: 10px;
 }
 

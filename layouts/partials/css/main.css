@@ -505,7 +505,10 @@ div.main .container .content .header > div {
   transition: .2s linear;
   overflow: hidden;
 }
-div:hover > .overlay {
+.post-item:hover .overlay {
+  height: 100%;
+}
+.header:hover .overlay {
   height: 100%;
 }
 .overlay a {

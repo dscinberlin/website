@@ -39,7 +39,7 @@ margin: 0;
 }
 div.header-home .container .logo {
 max-width: 216px;
-margin-left: 24px;
+margin-left: 0px;
 }
 div.header-home .name-home {
 padding-top: 30px;
@@ -136,17 +136,6 @@ div.main .content {
   {{ else }}
   font-size: 16px;
   {{ end }}
-}
-div.main .container .content .post-item {
-display: block;
-list-style: none;
-padding-left: 1.5em;
-}
-div.main .container .content .post-item .meta {
-display: block;
-}
-div.main .container .content .post-item .meta .date {
-  margin-right: 2em;
 }
 
 div.main .content .markdown blockquote {

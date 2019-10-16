@@ -1,7 +1,7 @@
 ---
 title: "TU Hackday: Pixelflut"
 date: 2019-10-02T01:09:53+02:00
-evdate: 2019-10-16T19:00:00+02:00
+evdate: 2019-10-16T19:30:00+02:00
 evlocation: MAR Gebäude, Marchstraße 23, 10587 Berlin
 evlink: https://www.eventbrite.com/e/dsc-local-hackday-tu-berlin-tickets-74812324677?ref=elink
 draft: false

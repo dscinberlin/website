@@ -92,6 +92,12 @@
             </a>
         {{ end }}
 
+        {{ if .Site.Params.Telegram }}
+            <a href="{{ .Site.Params.Telegram }}">
+                <img class="icon" src="{{ .Site.BaseURL }}img/telegram.svg" alt="telegram" />
+            </a>
+        {{ end }}
+
         {{ if .Site.Params.linkedin }}
             <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" rel=me target="_blank">
                 <img class="icon" src="{{ .Site.BaseURL }}img/linkedin.svg" alt="linkedin" />

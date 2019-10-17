@@ -4,9 +4,11 @@
 {{ partial "head.html" . }}
 
 <body>
+{{ if ne .Site.Params.Eventbanner.text "" }}
 <div class="event-strap">
-    <a href="https://dscinberlin.eventbrite.com/?ref=elink" target="_blank">NEXT EVENT: TU Hackday 16.10.2019, MAR</a>
+    <a href="{{ .Site.Params.Eventbanner.link }}" target="_blank">{{ .Site.Params.Eventbanner.text }}</a>
 </div>
+{{ end }}
 
 <div class="header header-home column">
     <div class="container">

@@ -49,6 +49,9 @@ social_banner = "img/banner.png"
 posts_navigation = false
 small_banner_logo = false
 titlestyle = "capitalize"
+  [params.eventbanner]
+  link = ""
+  text = ""
 
 [languages]
   [languages.en]

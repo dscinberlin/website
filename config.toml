@@ -57,8 +57,10 @@ titlestyle = "capitalize"
 [languages]
   [languages.en]
   languageName = "English"
+  contentDir = "content/en"
 
   [languages.de]
   languageName = "German"
+  contentDir = "content/de"
     [languages.de.params]
     description = "Website und Blog der lokalen Berliner DSC Gruppe"

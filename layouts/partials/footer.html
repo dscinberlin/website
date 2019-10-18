@@ -38,8 +38,14 @@
         <div>
             <ul class="language">
                 {{ if .IsTranslated }}
-                {{ range .Translations }}
-                <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+                {{ range .AllTranslations }}
+                <li>
+                    {{ if eq $.Site.Language.Lang .Language.Lang }}
+                    <a class="current" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                    {{ else }}
+                    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                    {{ end }}
+                </li>
                 {{ end }}
                 {{ end }}
             </ul>

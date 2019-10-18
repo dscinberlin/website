@@ -308,6 +308,10 @@ div.footer .container div .language {
 div.footer .container div .language li {
   margin: 5px;
 }
+div.footer .container div .language li a.current {
+  pointer-events: none;
+  cursor: default;
+}
 
 div.main .container {
   -webkit-align-items: center;

@@ -37,11 +37,14 @@
         </div>
         <div>
             <ul class="language">
-            {{ range $.Site.Home.AllTranslations }}
-            <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-            {{ end }}
+                {{ if .IsTranslated }}
+                {{ range .Translations }}
+                <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+                {{ end }}
+                {{ end }}
             </ul>
         </div>
+
         <div class="icons">
 
         {{ if .Site.Params._500px }}

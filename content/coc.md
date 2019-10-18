@@ -3,6 +3,7 @@ title: "Event Code of Conduct & Anti-Harrassment Policy"
 date: 2019-10-02T00:07:35+02:00
 url: "coc"
 draft: false
+translationKey: coc
 ---
 
 DSC Berlin is dedicated to providing a harassment-free and inclusive event experience for everyone regardless of gender identity and expression, sexual orientation, disabilities, neurodiversity, physical appearance, body size, ethnicity, nationality, race, age, religion, or other protected category. We do not tolerate harassment of event participants in any form. DSC Berlin takes violations of our policy seriously and will respond appropriately.

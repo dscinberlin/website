@@ -1,3 +1,7 @@
+* {
+  font-family: "Roboto", "Open Sans", "Arial", sans-serif;
+}
+
 div.event-strap {
   background-color: red;
   width: 100%;
@@ -12,11 +16,6 @@ div.event-strap {
 div.event-strap a {
   color: white;
   font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Nexa Bold';
-  src: url('{{ .Site.BaseURL }}fonts/Nexa Bold.otf');
 }
 
 html, body, div, span, applet, object, iframe,
@@ -36,7 +35,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -99,7 +97,6 @@ body {
   width: 100%;
   min-height: 100%;
   font-weight: 400;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   color: #111111;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
@@ -173,30 +170,19 @@ div.header .content {
   align-items: center;
 }
 div.header .container .logo {
-  {{ if .Site.Params.enlarged }}
-  max-width: 200px;
-  {{ else }}
-  max-width: 100px;
-  {{ end }}
-  margin-left: -2em;
+  margin-left: -20px;
+}
+
+div.header .title a {
+  display: flex;
+  align-items: center;
+  height: 6em;
 }
 div.header .name {
   padding-top: 0px;
   font-size: 28px;
-  font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
-  letter-spacing: -0.005rem;
-  {{ if isset .Site.Params "titlestyle" }}
-      {{ if in "capitalize uppercase lowercase none full-width" .Site.Params.titlestyle }}
-  text-transform: {{ .Site.Params.titlestyle }};
-      {{ else }}
-      {{ errorf "This titlestyle is not a valid text-transform css parameter: %s" .Site.Params.titlestyle }}
-      {{ end }}
-  {{ else }}
-  text-transform: uppercase;
-  {{ end }}
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+  font-weight: bold;
+  letter-spacing: -0.01rem;
   color: #333333;
 }
 div.header nav {
@@ -236,7 +222,6 @@ div.header nav ul a {
   font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
@@ -248,7 +233,6 @@ div.header nav ul a {
   font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 .coc-link:hover {
   color: #111111;
@@ -347,20 +331,10 @@ div.main .content .posts {
 div.main .content .page-heading  {
   font-size: 1.3em;
   font-weight: 700;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   text-transform: capitalize;
   font-smoothing: antialiased;
   color: #333333;
-}
-div.main .content .page-heading {
-  margin-bottom: 16px;
-}
-div.main .content .front-matter .page-heading {
-  margin-bottom: 0;
-}
-div.main .event .page-heading {
-  margin-bottom: 0;
 }
 div.main .event .header {
   padding: 0;
@@ -462,7 +436,6 @@ div.main .container.f04 .content {
 div.main .container.f04 .content .num {
   margin: 30px 0px 30px 0;
   font-weight: 400;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 50px;
 }
 div.main .container.f04 .content .detail {
@@ -476,8 +449,43 @@ div.main .container .content .post-item {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   list-style: none;
 }
+div.additional {
+  padding-right: 30px;
+}
+div.post-images {
+  max-width: 800px;
+}
+div.post-images img {
+  object-fit: cover;
+  object-position: 0 0;
+  width: 100px;
+  height: 100px;
+}
+
+div.events {
+}
+div.events h3 {
+  font-size: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+div.infobox {
+  font-size: 1.1em;
+  font-weight: 300;
+  background: #fafafa;
+  padding: 1.4em;
+  color: #909090;
+  text-align: center;
+}
+
+.post-past {
+  background-color: #f8f8f8;
+}
+
 div.event-date {
   display: block;
   background-color: #f8f8f8;
@@ -594,6 +602,12 @@ a {
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
+a.notlink {
+  color: unset;
+}
+a.notlink:hover {
+  color: unset;
+}
 a:hover {
   color: #2a6496;
 }
@@ -617,7 +631,6 @@ div.main .content .markdown h4,
 div.main .content .markdown h5,
 div.main .content .markdown h6 {
   font-size: 22px;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   font-weight: 700;
   -moz-osx-font-smoothing: grayscale;
@@ -867,29 +880,3 @@ kbd {
   line-height: 1.4;
   white-space: nowrap;
 }
-
-/* Fonts */
-
-{{ if not .Site.Params.disablefancyfonts  }}
-.wf-raleway-n4-active body, 
-.wf-raleway-n4-active div.header nav ul a,
-.wf-raleway-n7-active div.main .content .page-heading,
-.wf-raleway-n2-active div.main .container.f04 .content .num,
-.wf-raleway-n7-active div.main .content .markdown h1,
-.wf-raleway-n7-active div.main .content .markdown h2,
-.wf-raleway-n7-active div.main .content .markdown h3,
-.wf-raleway-n7-active div.main .content .markdown h4,
-.wf-raleway-n7-active div.main .content .markdown h5,
-.wf-raleway-n7-active div.main .content .markdown h6 {
-      font-family: 'Raleway';
-}
-
-.wf-merriweather-n3-active div.main .content .markdown {
-      font-family: 'Merriweather';
-}
-
-.wf-ubuntu-mono-n4-active div.main .content .markdown code,
-.wf-ubuntu-mono-n4-active div.main .content .markdown pre {
-      font-family: 'Ubuntu Mono';
-}
-{{ end  }}

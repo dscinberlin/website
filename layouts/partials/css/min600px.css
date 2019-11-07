@@ -35,15 +35,8 @@ div.header .container {
 justify-content: flex-start;
 }
 div.header .container .logo {
-margin: 0;
-}
-div.header-home .container .logo {
-max-width: 216px;
-margin-left: 0px;
-}
-div.header-home .name-home {
-padding-top: 30px;
-font-size: 40px;
+  position: relative;
+  max-height: 10em;
 }
 div.header-home nav ul a {
 font-size: 18px;
@@ -118,10 +111,6 @@ margin-bottom: 30px;
 }
 .container {
 padding: 0 30px;
-}
-div.header {
-padding-top: 60px;
-padding-bottom: 10px;
 }
 div.footer {
 padding-top: 60px;

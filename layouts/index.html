@@ -1,15 +1,43 @@
 {{ partial "header.html" . }}
+{{/* Collect all event pages in the future and in the past */}}
+{{ $nbPosts := len (where .Data.Pages "Section" "events") }}
+{{ $futureEvents := slice }}
+{{ $pastEvents := slice }}
+{{ range (where .Site.Pages "Section" "events") }}
+    {{ if ne .Params.Evdate nil }}
+        {{ $t := time .Params.Evdate }}
+        {{ if $t.After now }}
+            {{ $futureEvents = $futureEvents | append .Page }}
+        {{ else }}
+            {{ $pastEvents = $pastEvents | append .Page }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
 <div class="main column">
     <div class="container">
         <div class="content">
-            <div class="posts">
-            {{ $nbPosts := len (where .Data.Pages "Section" "events") }}
-            {{ if gt $nbPosts 0 }}
+            <div class="events">
+            <h3>Future Events</h3>
+            {{ if gt (len $futureEvents) 0 }}
                 <ul>
-                {{ range (where .Pages "Section" "events") }}
-                    {{ range sort .Pages "Date" "desc" }}
-                        {{ partial "li.html" . }}
-                    {{ end }}
+                {{ range sort $futureEvents "Date" "desc" }}
+                    {{ partial "li_event.html" . }}
+                {{ end }}
+                </ul>
+            {{ else }}
+            <div class="infobox">
+                <p>We haven't announced any current events yet.</p>
+                <a href={{ .Site.Params.Telegram }}>Join our Telegram channel for future announcements.</a>.
+            </div>
+            {{ end }}
+            {{ if gt (len $pastEvents) 0 }}
+            </div>
+            <div class="events">
+            <h3>Past Events</h3>
+                <ul>
+                {{ range sort $pastEvents "Date" "desc" }}
+                    {{ partial "li_event_past.html" . }}
                 {{ end }}
                 </ul>
             {{ end }}

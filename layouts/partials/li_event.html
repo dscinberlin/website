@@ -1,0 +1,21 @@
+{{ if not .Params.draft }}
+<li class="post-item">
+    <div class="event-date">
+        <div class="time">{{ dateFormat "15:04" .Params.Evdate }}</div>
+        <div class="date">{{ dateFormat "Jan 2 2006" .Params.Evdate }}</div>
+        <div class="overlay">
+            <a href="{{ .Params.Evlink }}">
+                <i class="fa fa-ticket" aria-hidden="true"></i>
+                <div>Get tickets</div>
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <a class="page-heading" href="{{ .RelPermalink }}">
+            <span class="title">{{ .Title }}</span>
+            <span class="location">{{ .Params.Evlocation }}</span>
+        </a>
+        {{ .Summary }}
+    </div>
+</li>
+{{end}}

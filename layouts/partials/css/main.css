@@ -153,6 +153,7 @@ div.header .container {
   -moz-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
+  flex-direction: column;
 }
 div.header .content {
   display: -webkit-flex;
@@ -170,7 +171,7 @@ div.header .content {
   align-items: center;
 }
 div.header .container .logo {
-  margin-left: -20px;
+  margin-left: 0px;
 }
 
 div.header .title a {

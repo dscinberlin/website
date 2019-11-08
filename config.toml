@@ -13,17 +13,23 @@ pluralizelisttitles = false
 DefaultContentLanguage = "en"
 
 [menu]
-  [[menu.main]]
-    identifier = "Blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = -120
+  # [[menu.main]]
+  #   identifier = "Blog"
+  #   name = "Blog"
+  #   url = "/blog/"
+  #   weight = -120
+
+  # [[menu.main]]
+  #   identifier = "Events"
+  #   name = "Events"
+  #   url = "/events/"
+  #   weight = -110
 
   [[menu.main]]
-    identifier = "Events"
-    name = "Events"
-    url = "/events/"
-    weight = -110
+    identifier = "CoC"
+    name = "Code of Conduct"
+    url = "/coc"
+    weight = -100
 
 [permalinks]
 blog = "blog/:slug/"

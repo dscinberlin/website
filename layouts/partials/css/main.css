@@ -457,6 +457,8 @@ div.additional {
 }
 div.post-images {
   max-width: 800px;
+  display: flex;
+  overflow-x: hidden;
 }
 div.post-images img {
   object-fit: cover;

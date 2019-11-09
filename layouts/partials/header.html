@@ -4,6 +4,7 @@
 {{ partial "head.html" . }}
 
 <body>
+
 {{ if ne .Site.Params.Eventbanner.text "" }}
 <div class="event-strap">
     <a href="{{ .Site.Params.Eventbanner.link }}" target="_blank">{{ .Site.Params.Eventbanner.text }}</a>
@@ -15,8 +16,6 @@
         <a href="{{ .Site.BaseURL }}">
         <img class="logo" src="{{ .Site.Params.logofile | relURL }}" alt="logo">
         </a>
-        <div class="title">
-        </div>
         <div class="content">
             <a href="{{ .Site.BaseURL }}">
                 <h1 class="name">{{ .Site.Title }}</h1>

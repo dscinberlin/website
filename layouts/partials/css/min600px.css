@@ -1,3 +1,57 @@
+div.hero {
+  background-image: linear-gradient(#0000, #000000d8),url("img/room.jpg");
+  height: calc(100vh);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.heronav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+div.heronav .link {
+  font-size: 1.7em;
+  font-weight: 100;
+}
+
+div.hero .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.hero .logo div {
+  margin-top: 0.2em;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+div.hero .banner .logo img {
+  width: 10em;
+}
+
+div.banner {
+  margin-top: 20vh;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+div.banner div.text {
+  font-size: 3em;
+  font-weight: 100;
+  max-width: 20em;
+  margin-bottom: 30vh;
+}
+
 body {
 -webkit-justify-content: center;
 -moz-justify-content: center;

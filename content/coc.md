@@ -32,4 +32,3 @@ Harassment at events and in online communities is unfortunately common. Creating
 This policy is licensed under the Creative Commons Zero license.
 
 This policy is based on and influenced by several other community policies including: Ohio LinuxFest Anti-Harassment policy, Con Anti-Harassment Project, Geek Feminism Wiki (created by the Ada Initiative), ConfCodeofConduct.com, JSconf, Rust, Diversity in Python, and Write/Speak/Code.
-

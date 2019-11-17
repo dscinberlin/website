@@ -139,6 +139,16 @@
 
         </div>
     </div>
+
+    <div class="container left-align">
+        <ul>
+            {{ range .Site.Params.attributions }}
+            <li>
+            {{ . }}
+            </li>
+            {{ end }}
+        </ul>
+    </div>
 </div>
 
 {{ partial "footer_scripts" . }}

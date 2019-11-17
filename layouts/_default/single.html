@@ -1,9 +1,14 @@
 {{ partial "header.html" . }}
 
 {{ if (or (in .Site.Params.blogs .Section) (and (eq "blog" .Section) (not (isset .Site.Params "blogs")))) }}
-{{ partial "blog_single.html" . }}
+    {{ partial "blog_single.html" . }}
 {{ else if (eq "events" .Section) }}
-{{ partial "event_single.html" . }}
+    {{ $t := time .Params.Evdate }}
+    {{ if $t.After now }}
+        {{ partial "event_single.html" . }}
+    {{ else }}
+        {{ partial "event_recap_single.html" . }}
+    {{ end }}
 {{ else }}
 {{ partial "base_single.html" . }}
 {{ end }}

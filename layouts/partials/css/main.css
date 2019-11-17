@@ -254,16 +254,15 @@ div.footer .container {
   flex-direction: column-reverse;
   width: 100%;
   text-align: center;
+  font-size: 14px;
+  opacity: 0.6;
 }
 div.footer .container a {
   font-size: 14px;
   margin-left: 6px;
   margin-right: 6px;
   opacity: 0.6;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 div.footer .container a:first-child {
   margin-left: 0;
@@ -446,6 +445,12 @@ div.main .container .content .groupby {
   margin-top: 1em;
   padding-left: 0.5em;
 }
+div.main .container .content .events .post-item {
+  justify-content: left;
+}
+div.main .container .content .post-past .post-item {
+  justify-content: space-between;
+}
 div.main .container .content .post-item {
   display: flex;
   flex-direction: row;
@@ -485,8 +490,13 @@ div.infobox {
   text-align: center;
 }
 
+.infobox .symbol {
+  width: 2em;
+}
+
 .post-past {
   background-color: #f8f8f8;
+  margin-bottom: 1em;
 }
 
 div.event-date {

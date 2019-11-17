@@ -70,9 +70,17 @@ color: #333333;
 }
 div.footer {
 background-color: transparent;
+flex-direction: column;
 }
 div.footer .container {
 flex-direction: row;
+}
+div.footer div.left-align {
+  justify-content: left;
+}
+div.footer ul {
+  color: #909090;
+  font-size: 0.7em;
 }
 div.footer .container a {
 margin-left: 3px;

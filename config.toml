@@ -55,6 +55,9 @@ telegram = "https://t.me/dsc_berlin"
 social_banner = "img/banner.png"
 posts_navigation = false
 small_banner_logo = false
+attributions = [
+  "Icon made by Freepik from www.flaticon.com",
+]
 titlestyle = "capitalize"
   [params.eventbanner]
   link = ""

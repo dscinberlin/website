@@ -56,7 +56,7 @@ social_banner = "img/banner.png"
 posts_navigation = false
 small_banner_logo = false
 attributions = [
-  "Icon made by Freepik from www.flaticon.com",
+  "Symbolic icons made by Freepik from www.flaticon.com",
 ]
 titlestyle = "capitalize"
   [params.eventbanner]

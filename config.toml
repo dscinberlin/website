@@ -60,8 +60,8 @@ attributions = [
 ]
 titlestyle = "capitalize"
   [params.eventbanner]
-  link = ""
-  text = ""
+  link = "https://www.eventbrite.com/e/dsc-local-hackday-hwr-berlin-tickets-82528995447"
+  text = "NEXT EVENT: HWR Pixelflut on 16. December 5 PM"
 
 [languages]
   [languages.en]

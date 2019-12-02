@@ -1,3 +1,3 @@
 <script>
-window.location = "https://dscinberlin.eventbrite.com/?ref=elink";
+window.location = "https://hwr-hackday.eventbrite.com/?aff=weblink";
 </script>

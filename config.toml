@@ -61,7 +61,7 @@ attributions = [
 titlestyle = "capitalize"
   [params.eventbanner]
   link = "https://www.eventbrite.com/e/dsc-local-hackday-hwr-berlin-tickets-82528995447"
-  text = "NEXT EVENT: HWR Pixelflut on 16. December 5 PM"
+  text = "NEXT EVENT: HWR Pixelflut on 16. December 5 PM. FREE TICKETS available."
 
 [languages]
   [languages.en]

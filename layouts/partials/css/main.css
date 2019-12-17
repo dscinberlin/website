@@ -465,12 +465,13 @@ div.post-images {
   max-width: 800px;
   display: flex;
   overflow-x: hidden;
+  align-content: stretch;
 }
 div.post-images img {
   object-fit: cover;
   object-position: 0 0;
-  width: 100px;
   height: 100px;
+  width: 100%;
 }
 
 div.events {

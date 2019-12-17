@@ -1,7 +1,7 @@
 {{ if not .Params.draft }}
 <li class="post-past">
     <a class="notlink" href="{{ .RelPermalink }}">
-        {{ if ge (len (.Resources.Match "images/*")) 8 }}
+        {{ if ge (len (.Resources.Match "images/*")) 1 }}
         <div class="post-images">
             {{ range first 8 (.Resources.Match "images/*") }}
             {{ $i := .Resize "100x" }}

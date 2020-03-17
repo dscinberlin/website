@@ -61,7 +61,7 @@ attributions = [
 titlestyle = "capitalize"
   [params.eventbanner]
   link = ""
-  text = ""
+  text = "Following current COVID19 containment measures all planned DSC events will be CANCELLED until further notice.."
 
 [languages]
   [languages.en]
